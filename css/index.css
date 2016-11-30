@@ -1,0 +1,105 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+html{
+	height: 100%;
+}
+
+body {
+	font-family: Monteserrat, Roboto;	
+	height: 100%;
+}
+
+#page {
+	min-height: 100%;
+}
+
+#main {
+	overflow:auto;
+	padding-bottom: 100px; /* same footer */
+	margin: 30px	
+}
+
+#footer {
+	position: relative;
+	margin-top: -100px; /* same main */
+	height: 100px;
+	clear:both;
+
+	color: white;
+	padding: 36px 0 42px;
+	background-color: #252525;	
+	opacity: 0.80;
+} 
+
+#nav{
+	text-align: center;
+	border-bottom: 1px solid;
+	padding-top: 20px;
+}
+
+#nav-right{
+	padding-left: 20px;
+}
+
+#nav-left{
+	padding-right: 80px;
+}
+
+#nav-left, #nav-center, #nav-right{
+	display:inline-block;
+}
+
+#nav-center{
+	text-align: center;
+}
+
+#nav-center ul li {
+	display: inline;
+	list-style: none;
+	margin: 0;
+	padding: 0 19px;
+}
+
+#nav-center ul li a {
+	color: #6600CD;
+	display: inline-block;
+	font-family: Montserrat;	
+	font-size: 18px;
+	font-weight: normal;
+	margin: 0;
+	padding: 0 0 3px;
+	text-decoration: none;
+	text-transform: uppercase;	
+}
+
+#nav-center ul li.active a{	
+	color: black;
+	border-bottom: 5px solid black;  	
+}
+
+#nav-center ul li a:hover, #nav-center ul li.selected a {
+	color: black;
+
+	border-bottom: 5px solid black;  	
+}
+
+#nav-right ul li{
+	list-style: none;
+
+}
+
+#phone{
+	color: #6600CD;
+	font-size: 17px;	
+}
+
+#address{
+	color: grey;
+	font-size: 16px;	
+}
+
+
+#footer p{
+	text-align: center;
+	opacity: 1;
+}
