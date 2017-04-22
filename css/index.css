@@ -16,7 +16,8 @@ body {
 #main {
 	overflow:auto;
 	padding-bottom: 100px; /* same footer */
-	margin: 30px	
+	margin: 30px;
+	padding-left: : 20px;	
 }
 
 #footer {
@@ -35,18 +36,15 @@ body {
 	text-align: center;
 	border-bottom: 1px solid;
 	padding-top: 20px;
-}
-
-#nav-right{
-	padding-left: 20px;
-}
-
-#nav-left{
-	padding-right: 80px;
+	letter-spacing: 1px;
 }
 
 #nav-left, #nav-center, #nav-right{
-	display:inline-block;
+	display:inline-block;	
+}
+
+#nav-left{
+	padding-bottom: 1em;
 }
 
 #nav-center{

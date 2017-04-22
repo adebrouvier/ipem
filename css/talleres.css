@@ -1,0 +1,17 @@
+@import "index.css";
+
+.course-bullets {
+	list-style-type: none;		
+}
+
+.course {    
+    background: #6600CD;
+    font-family: Montserrat;
+    padding: 20px; 
+    width: 200px;
+    height: 150px; 
+    font-size: 30px;
+    color: white;    
+    text-align: center;    
+    margin: 10px;    
+}

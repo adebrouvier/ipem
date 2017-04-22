@@ -2,13 +2,13 @@
 
 <html>
 	<head>
-		<title>IPEM</title>
+		<title>Talleres - IPEM</title>
 		<meta charset="utf-8">
-
 		
 		<!--Bootstrap-->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/cursos	.css">
+		<link rel="stylesheet" href="css/talleres.css">
+		<link rel="icon" type="image/png" href="res/favicon.png" />
 	</head>
 	<body>
 
@@ -16,7 +16,7 @@
 		<div id="page">
 			<div id="nav">
 				<div id="nav-left">
-					<a href="index.html"><img width="120" src="rsc/logo.png" alt="Logo IPEM"/></a>
+					<a href="index.html"><img height="100" src="res/logo.png" alt="Logo IPEM"/></a>
 				</div>				
 				<div id="nav-center">				
 					<ul>
@@ -24,7 +24,10 @@
 							<a href="index.html">Inicio</a>
 						</li>
 						<li class="active">
-							<a href="#">Cursos</a>
+							<a href="#">Talleres</a>
+						</li>
+						<li >
+							<a href="about.html">Acerca de nosotros</a>
 						</li>
 						<li>
 							<a href="contacto.html">Contacto</a>
@@ -33,7 +36,7 @@
 				</div>
 				<div id="nav-right">
 					<ul>
-						<li id="phone">TEL.: (0297) 448 - 6644</li>
+						<li id="phone">TEL.: (0297) 448 - 5832</li>
 						<li id="address"> Av. Roca 1163 - Comodoro Rivadavia</li>
 					</ul>
 				</div>				
@@ -41,28 +44,27 @@
 
 			<div id="main">
 
-				<h1>Cursos</h1>
+				<h1>Talleres</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<ul class="list-bullets">					
-					<li>Bajo</li>
-					<li>Batería</li>
-					<li>Canto</li>
-					<li>Guitarra Clásica</li>
-					<li>Guitarra Eléctrica</li>
-					<li>Percusión</li>
-					<li>Piano</li>				
-				</ul>
-
-
+				<div class="container">
+					<div class="row">
+						<ul class="course-bullets">					
+							<li class="course col-xs-6">Bajo</li>
+							<li class="course col-xs-6">Batería</li>
+							<li class="course col-xs-6">Canto</li>
+							<li class="course col-xs-6">Guitarra<br/>Clásica</li>
+							<li class="course col-xs-6">Guitarra<br/>Eléctrica</li>
+							<li class="course col-xs-6">Percusión</li>
+							<li class="course col-xs-6">Piano</li>
+							<li class="course col-xs-6">Violín</li>				
+						</ul>					
+					</div>
+				</div>
 			</div>
 
 		</div>					
 
-		<div id="footer">
-			<p>&copy; 2016 by <a href="https://www.github.com/adebrouvier">adebrouv</a>.</p>			
-		</div>
-
-
+		<div data-fragment="footer.html"></div>
 
 	</body>
 
