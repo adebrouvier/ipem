@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 html{
 	height: 100%;
@@ -6,6 +6,7 @@ html{
 
 body {
 	font-family: Monteserrat, Roboto;	
+	font-size: 15px;
 	height: 100%;
 }
 
@@ -15,36 +16,33 @@ body {
 
 #main {
 	overflow:auto;
-	padding-bottom: 100px; /* same footer */
+	padding-bottom: 80px; /* same footer */
 	margin: 30px;
-	padding-left: : 20px;	
+	padding-left: 20px;	
 }
 
 #footer {
 	position: relative;
-	margin-top: -100px; /* same main */
-	height: 100px;
+	margin-top: -80px; /* same main */
+	height: 80px;
 	clear:both;
 
 	color: white;
 	padding: 36px 0 42px;
-	background-color: #252525;	
+	background-color: #424242;	
 	opacity: 0.80;
 } 
 
 #nav{
 	text-align: center;
-	border-bottom: 1px solid;
+	/*border-bottom: 2px solid;*/
+	border-color: #6600CD;
 	padding-top: 20px;
 	letter-spacing: 1px;
 }
 
 #nav-left, #nav-center, #nav-right{
 	display:inline-block;	
-}
-
-#nav-left{
-	padding-bottom: 1em;
 }
 
 #nav-center{
@@ -77,8 +75,8 @@ body {
 
 #nav-center ul li a:hover, #nav-center ul li.selected a {
 	color: black;
-
 	border-bottom: 5px solid black;  	
+	transition: 0.2s;
 }
 
 #nav-right ul li{
@@ -100,4 +98,12 @@ body {
 #footer p{
 	text-align: center;
 	opacity: 1;
+}
+
+h1, h2, h3 {
+	color: #6600CD;
+}
+
+#social{
+	text-align: center;
 }

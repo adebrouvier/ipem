@@ -1,5 +1,13 @@
 @import "index.css";
 
+ul {
+    color:#6600CD;
+}
+
+li > p{
+    color:black;
+}
+
 .course-bullets {
 	list-style-type: none;		
 }
