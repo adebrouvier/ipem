@@ -29,14 +29,6 @@ html{
 	border-width: 0 0 1px;
 }
 
-.scrolled-active{
-	border-bottom: 5px solid black;    
-}
-
-.scrolled-links .scrolled-active{
-	color:black;
-}
-
 #nav-left, #nav-center, #nav-right{
 	display:inline-block;
 	vertical-align: middle;
@@ -72,9 +64,19 @@ html{
 	color: #64328a;
 }
 
+#nav-center .scrolled-links:hover{
+	color: black;
+	border-bottom-color: black;
+}
+
 #nav-center ul li.active a{	
 	border-bottom: 5px solid white;
 	color: white;
+}
+
+#nav-center ul li.active.scrolled-active a{
+	border-bottom: 5px solid black;
+	color:black;
 }
 
 #nav-center ul li a:hover, #nav-center ul li.selected a {

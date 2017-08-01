@@ -43,13 +43,9 @@ li > p{
     width: 200px;
     height: 150px;
     font-size: 30px;
-    color: white;
     text-align: center;
     margin: 10px;
-}
-
-.course-bullets {
-	list-style-type: none;
+    color:white;
 }
 
 .course:hover {
@@ -59,4 +55,18 @@ li > p{
     border-color: #64328a;
     color: #64328a;
     transition: 0.2s;
+}
+
+.course a{
+    color:white;
+    display: block;
+}
+
+.course-bullets {
+    list-style-type: none;
+    display: block;
+}
+
+.course-bullets a{
+    display: inline-block;
 }
