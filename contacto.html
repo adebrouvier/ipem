@@ -7,17 +7,28 @@
 		
 		<!--Bootstrap-->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/contacto.css">
 		<link rel="icon" type="image/png" href="res/favicon.png" />
 		<script src="js/fragment.js"></script>
 	</head>
 	<body>
-
+		<!-- Load Facebook SDK for JavaScript -->
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.9";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
 
 		<div id="page">
 			<div id="nav">
 				<div id="nav-left">
-					<a href="index.html"><img height="100" src="res/logo.png" alt="Logo IPEM"/></a>
+					<a href="index.html"><img height="80" src="res/logo.png" alt="Logo IPEM"/></a>
 				</div>				
 				<div id="nav-center">				
 					<ul>
@@ -44,8 +55,8 @@
 			</div>
 
 			<div id="main">
-				<h1>Contacto</h1>
-				<div class="container-fluid">
+				<div class="container">
+					<h1>Contacto</h1>
 					<div class="row">
 						<div class="col-md-4">
 							
@@ -60,29 +71,38 @@
 							<p>Líneas de colectivo 3 y 4</p>
 						</div>
 
-						<div class="col-md-4">
+						<div class="col-md-3">
 							<h3>Teléfono</h3>
 							<p>(0297) 448 - 5832</p>
 
 							<h3>E-mail</h3>
-							<p>info@ipemcomodoro.com.ar</p>
+							<p>ipem.cr@hotmail.com</p>
 							
-							<br/>
-							<a href="https://www.facebook.com/ipemcr"><img src="res/fb-29.png"/></a>
-							<a href="https://www.twitter.com/ipemcr"><img width="29" height="29" src="res/twitter.png"/></a>
-							<a href="https://www.youtube.com/channel/UCeSQ99ApVWQfJlayppctdEQ"><img height="29" src="res/youtube.png"/></a>
+							<div id="social-icons">
+								<br/>
+								<a href="https://www.facebook.com/ipemcr"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i>Facebook</a>
+								<br/>
+								<a href="https://www.twitter.com/ipemcr"><i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i>Twitter</a>
+								<br/>
+								<a href="https://www.youtube.com/channel/UCeSQ99ApVWQfJlayppctdEQ"><i class="fa fa-youtube-square fa-lg" aria-hidden="true"></i>Youtube</a>
+								<br/>
+							</div>
 						</div>
+
+						<div class="col-md-4">
+							<div class="fb-page" data-href="https://www.facebook.com/ipemcr" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-height="400" data-width="400"><blockquote cite="https://www.facebook.com/ipemcr" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ipemcr">I.P.E.M. Instituto Privado de Enseñanza Musical</a></blockquote></div>
+						</div>						
+					</div>
+					<br/>
+					<div id="map">
+						<h3>Dónde estamos</h3>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2777.8488788034183!2d-67.53621268474794!3d-45.874332979107955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde454faa00cf839%3A0xe7fcf19f8d2d8502!2sI.P.E.M.+Instituto+Privado+de+Ense%C3%B1anza+Musical!5e0!3m2!1ses-419!2sar!4v1492788430800" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>
 				</div>
-				<div id="map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2777.8488788034183!2d-67.53621268474794!3d-45.874332979107955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde454faa00cf839%3A0xe7fcf19f8d2d8502!2sI.P.E.M.+Instituto+Privado+de+Ense%C3%B1anza+Musical!5e0!3m2!1ses-419!2sar!4v1492788430800" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-				</div>
+				<div data-fragment="footer.html"></div>
 			</div>
 
-		</div>					
-
-		<div data-fragment="footer.html"></div>
-
+		</div>
 	</body>
 
 

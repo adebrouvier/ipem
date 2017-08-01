@@ -1,52 +1,53 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+h1, h2, h3 {
+	color: #64328a;
+}
 
-html{
+html{	
 	height: 100%;
 }
 
-body {
-	font-family: Monteserrat, Roboto;	
-	font-size: 15px;
+#page {	
 	height: 100%;
 }
-
-#page {
-	min-height: 100%;
-}
-
-#main {
-	overflow:auto;
-	padding-bottom: 80px; /* same footer */
-	margin: 30px;
-	padding-left: 20px;	
-}
-
-#footer {
-	position: relative;
-	margin-top: -80px; /* same main */
-	height: 80px;
-	clear:both;
-
-	color: white;
-	padding: 36px 0 42px;
-	background-color: #424242;	
-	opacity: 0.80;
-} 
 
 #nav{
+	background-color: rgba(255, 255, 255, 0);
+	margin-bottom: 40px;
+	overflow: hidden;
+	position: fixed;
 	text-align: center;
-	/*border-bottom: 2px solid;*/
-	border-color: #6600CD;
-	padding-top: 20px;
-	letter-spacing: 1px;
+	top: 0;
+	z-index: 1030;
+	width: 100%;
+}
+
+.scrolled {
+  	background-color: #ffffff !important;
+  	transition: background-color 200ms linear;
+  	border-color: #ebebeb;
+	border-style: solid;
+	border-width: 0 0 1px;
+}
+
+.scrolled-active{
+	border-bottom: 5px solid black;    
+}
+
+.scrolled-links .scrolled-active{
+	color:black;
 }
 
 #nav-left, #nav-center, #nav-right{
-	display:inline-block;	
+	display:inline-block;
+	vertical-align: middle;
 }
 
 #nav-center{
 	text-align: center;
+}
+
+#nav-center ul{	
+	margin-bottom: 0;
 }
 
 #nav-center ul li {
@@ -56,10 +57,9 @@ body {
 	padding: 0 19px;
 }
 
-#nav-center ul li a {
-	color: #6600CD;
-	display: inline-block;
-	font-family: Montserrat;	
+#nav-center ul li a {	
+	color: white;
+	display: inline-block;	
 	font-size: 18px;
 	font-weight: normal;
 	margin: 0;
@@ -68,42 +68,221 @@ body {
 	text-transform: uppercase;	
 }
 
+#nav-center .scrolled-links{
+	color: #64328a;
+}
+
 #nav-center ul li.active a{	
-	color: black;
-	border-bottom: 5px solid black;  	
+	border-bottom: 5px solid white;
+	color: white;
 }
 
 #nav-center ul li a:hover, #nav-center ul li.selected a {
-	color: black;
-	border-bottom: 5px solid black;  	
+	border-bottom: 5px solid white;
+	color: white;
 	transition: 0.2s;
 }
 
 #nav-right ul li{
 	list-style: none;
+}
 
+@media only screen and (max-width: 1026px) {
+	#nav{
+		position: static;
+		overflow: visible;
+		background-color: black;
+	}
+
+    #nav-right {
+        display: none;
+    }
+
+    #logo{
+    	display: none;
+    }
 }
 
 #phone{
-	color: #6600CD;
-	font-size: 17px;	
+	color: grey;
+	font-size: 17px;
 }
 
 #address{
 	color: grey;
-	font-size: 16px;	
+	font-size: 16px;
 }
 
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	height: 100%;
+}
 
-#footer p{
+#main {	
+	height: 100%;
+}
+
+#inicio { 	
+	background-image: url("../res/bateria.jpeg");
+
+	height: 100%; 
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	text-align: center;
-	opacity: 1;
+	margin-bottom: 40px;
+	padding-bottom: 5px;
 }
 
-h1, h2, h3 {
-	color: #6600CD;
+#logo{
+	margin-top: 40px;
 }
+
+
+#title{
+	color: #FFFFFF;
+	font-size: 40px;
+	top: 50%;
+}
+
+#subtitle{
+	color: #FFFFFF;
+	font-size: 30px;
+}
+
+.offer{
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.infobox{
+	background-color: #ffffff;
+	box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);	
+}
+
+.infobox p{
+	margin: 0px 15px 15px 25px;
+}
+
+.infobox-title{
+	background-color: #64328a;
+	color: #ffffff;
+	display: inline;
+	font-size: 20px;
+	letter-spacing: 1px;
+	padding:5px;
+	position: relative;
+	text-transform: uppercase;
+	top:-50px;
+}
+
+.infobox-description{
+	padding-bottom: 20px;
+}
+
+.button{
+	color:#64328a;
+	border-width: 2px;
+    border-style: solid;
+    border-color: #64328a;
+    border-radius: 2px;
+    padding: 10px 15px 10px 15px;
+    margin-bottom: 20px;
+}
+
+.button:hover{
+	background-color: #64328a;
+	color: white;
+	transition: 0.2s;
+}
+
+.text-box{	
+	padding-top: 17px;
+}
+
+#quote{
+	text-align: center;
+}
+
+blockquote {
+	border:none;
+	font-family: Helvetica;
+	margin-bottom:30px;
+	quotes: "\201C""\201D""\2018""\2019";
+	font-size:30px;
+	color: #64328a;
+}
+
+blockquote:before { 
+    content: open-quote;
+    font-weight: bold;
+    font-size:40px;
+    line-height: 110%;
+    color:#64328a;
+} 
+blockquote:after { 
+    content: close-quote;
+    font-weight: bold;
+    font-size:40px;
+    line-height: 110%;
+    color:#64328a;
+ }
 
 #social{
 	text-align: center;
+}
+
+#social a{
+	color: white;
+}
+
+#social i{
+	padding-left: 20px;
+	padding-right: 5px;
+}
+
+#social a:hover, i:hover{
+	color:#7a7a7a;
+	transition: 0.2s;
+}
+
+#footer {	
+	height: 120px;
+	background-color: #2A2A2A;
+	color: white;
+	padding: 36px 0 0;
+}
+
+#footer p{
+	opacity: 1;
+	text-align: center;
+}
+
+.scroll a {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.scroll-button {	
+  	display: inline-block;
+  	width: 4em;
+  	height: 4em;
+  	border: 0.5em solid white;
+  	border-radius: 50%;
+  	margin-left: 0.75em;
+}
+
+.scroll-button:after {
+  	content: '';
+	display: inline-block;
+  	margin-top: 0.6em;
+  	width: 1.4em;
+  	height: 1.4em;
+	border-top: 0.5em solid white;
+  	border-right: 0.5em solid white;
+  	-moz-transform: rotate(135deg);
+  	-webkit-transform: rotate(135deg);
+  	transform: rotate(135deg);
 }

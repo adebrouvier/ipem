@@ -1,25 +1,62 @@
 @import "index.css";
 
-ul {
-    color:#6600CD;
+#nav{
+    background-color: white;
+    border-color: #ebebeb;
+    border-style: solid;
+    border-width: 0 0 1px;
+}
+
+#nav ul li a {
+    color:#64328a;
 }
 
 li > p{
     color:black;
 }
 
-.course-bullets {
-	list-style-type: none;		
+#nav-center ul li.active a{ 
+    border-bottom: 5px solid black;
+    color: black;
+}
+
+#nav-center ul li a:hover, #nav-center ul li.selected a {
+    border-bottom: 5px solid black;
+    color: black;
+    transition: 0.2s;
+}
+
+#main{
+    margin-top: 82px;
+}
+
+.item-text-box{
+    text-align: center;
+    border-style: solid;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .course {    
-    background: #6600CD;
-    font-family: Montserrat;
-    padding: 20px; 
+    background: #64328a;
+    padding: 20px;
     width: 200px;
-    height: 150px; 
+    height: 150px;
     font-size: 30px;
-    color: white;    
-    text-align: center;    
-    margin: 10px;    
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+.course-bullets {
+	list-style-type: none;
+}
+
+.course:hover {
+    background: white;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #64328a;
+    color: #64328a;
+    transition: 0.2s;
 }

@@ -3,33 +3,24 @@
 <html>
 	<head>
 		<title>IPEM - Instituto Privado de Enseñanza Musical</title>
-		<meta charset="utf-8">
+		<meta charset="utf-8">		
 		
-		<!--Bootstrap-->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/index.css">
-		<link rel="icon" type="image/png" href="res/favicon.png" />
+		<link rel="icon" type="image/png" href="res/favicon.png"/>
 		<script src="js/fragment.js"></script>
+
 	</head>
 	<body>
-		<!-- Load Facebook SDK for JavaScript -->
-		<div id="fb-root"></div>
-		<script>(function(d, s, id) {
-			  var js, fjs = d.getElementsByTagName(s)[0];
-			  if (d.getElementById(id)) return;
-			  js = d.createElement(s); js.id = id;
-			  js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.9";
-			  fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));
-		</script>
-
-
+		
 		<div id="page">
 			<div id="nav">
 				<div id="nav-left">
-					<a href="#"><img height="100" src="res/logo.png" alt="Logo IPEM"/></a>
-				</div>				
-				<div id="nav-center">				
+					<a href="#"><img id="nav-logo" src="res/logo_white_h.png" height="80"></img></a>					
+				</div>
+				<div id="nav-center">
 					<ul>
 						<li class="active">
 							<a href="#">Inicio</a>
@@ -54,46 +45,86 @@
 			</div>
 
 			<div id="main">
-				<div class="container">
+				<div id="inicio">
+					<div class="container">
+						<img id="logo" src="res/logo_white.png" height="400"></img>
+						<br/>
+						<span id="title">Entrá al mundo de la música.</span>
+						<br/>
+							<span id="subtitle">Relizá tus primeros pasos o enriquecé lo que ya sabés.</span>
+						<br/>
+						<div id="scroll">
+							<a href="#second-section"><span class="scroll-button"></span></a>
+						</div>
+					</div>
+				</div>				
+
+				<div class="container">				
+
+					<h1 id="#second-section" class="offer">¿Qué ofrecemos?</h1>
+					
 					<div class="row">
-						<div class="col-md-8">
-							<h1>Bienvenidos</h1>
-							<br/>
-							<p><b>IPEM</b> se dedica a la enseñanza de <b>piano, órgano, guitarra clásica y eléctrica, bajo, batería, canto, percusión y violín.</b> <a href="talleres.html" class="btn btn-secondary btn-sm" role="button">Ver más</a></p>
-
-							<p>El Instituto cuenta con 4 aulas totalmente equipadas con los elementos necesarios para el desarrollo de las clases: <i>instrumentos, amplificadores, afinadores, cables, atriles, reproductores de audio, etc</i>. Además contamos con amplia biblioteca y discoteca.</p>
-
-							<p>Se dictan clases a alumnos de todas las edades, niños <b>desde los 5 años</b> hasta adultos mayores.</p>
-
-							<p>Ofrecemos amplios horarios para mayor comodidad de nuestros alumnos.</p>
-
-							<p>Contamos con un equipo de profesores capacitados en su área.</p>
-
-							<p>Realizamos <b>muestras musicales</b> que permiten a los alumnos vivir la experiencia de tocar en escenario y a sus familiares y amigos ver la evolución del alumno.</p>
-
-							<p>No lo dudes más ¡Vení a inscribirte y sumergite en el apasionante mundo de la música!</p>
+						<div class="col-md-6">			
+							<div class="infobox">
+								<a href="talleres.html"><img src="res/partitura.jpeg" class="img-fluid"/></a>
+								<div class="infobox-title">Talleres</div>
+								<div class="infobox-description">
+									<p><b>IPEM</b> se dedica a la enseñanza de <b>piano, órgano, guitarra clásica y eléctrica, bajo, batería, canto, percusión y violín.</b></p>
+									<p><a href="talleres.html" class="button" role="button">Ver más</a></p>
+								</div>
+							</div>
 
 						</div>
-						<div class="col-md-4">
-							<div class="fb-page" data-href="https://www.facebook.com/ipemcr" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/ipemcr" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ipemcr">I.P.E.M. Instituto Privado de Enseñanza Musical</a></blockquote></div>
-						</div>						
+						<div class="col-md-6">
+							<div class="infobox">
+								<a href="about.html"><img src="res/instalaciones.jpg" alt="Acerca de nosotros" class="img-fluid"/></a>
+								<div class="infobox-title">Nosotros</div>
+								<div class="infobox-description">
+									<p>Contamos con <b>4 aulas</b> totalmente equipadas con los elementos necesarios para el desarrollo de las clases: <i>instrumentos, amplificadores, afinadores, cables, atriles, reproductores de audio, etc</i>. Además contamos con amplia biblioteca y discoteca.</p>
+									<p><a href="about.html" class="button" role="button">Ver más</a></p>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div id="social">
-					<a href="https://www.facebook.com/ipemcr"><img src="res/fb-29.png"/></a>
-					<a href="https://www.twitter.com/ipemcr"><img width="29" height="29" src="res/twitter.png"/></a>
-					<a href="https://www.youtube.com/channel/UCeSQ99ApVWQfJlayppctdEQ"><img height="29" src="res/youtube.png"/></a>
-				</div>
-			</div>
 
+					<hr>
+
+					<h1 class="offer">Vení a aprender.</h1>
+
+					<div class="row text-box">
+						<div class="col-md-4">
+							<h3>Clases</h3>
+							<p>Se dictan clases a alumnos de todas las edades, niños <b>desde los 4 años</b> hasta adultos mayores.</p>
+							<p>Ofrecemos amplios horarios para mayor comodidad de nuestros alumnos.</p>
+						</div>
+						<div class="col-md-4">
+							<h3>Equipo</h3>
+							<p>Contamos con un equipo de profesores capacitados en su área.</p>
+						</div>
+						<div class="col-md-4">
+							<h3>Muestras</h3>
+							<p>Realizamos <b>muestras musicales</b> que permiten a los alumnos vivir la experiencia de tocar en escenario y a sus familiares y amigos ver la evolución del alumno.</p>
+						</div>
+					</div>					
+
+					<hr>
+					<div id="quote">
+						<blockquote>Compartiendo música desde hace 26 años.</blockquote>
+					</div>					
+				</div>
+
+				<div data-fragment="footer.html"></div>
 		</div>					
 
-		<div data-fragment="footer.html"></div>
 
-	</body>
+	</body>	
 
 	<!--3rd Party Scripts-->	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>	
+	
+	<script src=js/navbar.js></script>
+	<script src=js/scroll.js></script>
 
 </html>

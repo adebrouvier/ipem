@@ -1,1 +1,15 @@
 @import "index.css";
+@import "talleres.css";
+
+#social-icons a{
+	color: black;
+}
+
+#social-icons a:hover, i:hover{
+	color:#64328a;
+	transition: 0.2s;
+}
+
+#social-icons i{
+	padding-right: 10px;
+}
