@@ -105,6 +105,16 @@ html{
     }
 }
 
+@media screen and (max-width: 600px) {
+	#nav-center ul li a{
+		display: none;
+	}
+	#nav-center ul#icon {
+		float: right;
+		display: block;
+	}
+}
+
 #phone{
 	color: grey;
 	font-size: 17px;
@@ -113,6 +123,14 @@ html{
 #address{
 	color: grey;
 	font-size: 16px;
+}
+
+#icon i{
+	display: none;
+}
+
+#icon:hover{
+	border-style: none;
 }
 
 body {
@@ -141,7 +159,6 @@ body {
 #logo{
 	margin-top: 40px;
 }
-
 
 #title{
 	color: #FFFFFF;
