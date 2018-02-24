@@ -2,14 +2,6 @@ h1, h2, h3 {
 	color: #64328a;
 }
 
-html{	
-	height: 100%;
-}
-
-#page {	
-	height: 100%;
-}
-
 .bg-dark{
 	background-color: #2A2A2A !important;
 }
@@ -45,11 +37,6 @@ html{
 body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 15px;
-	height: 100%;
-}
-
-#main {	
-	height: 100%;
 }
 
 #inicio { 	
@@ -67,6 +54,7 @@ body {
 
 #logo{
 	margin-top: 80px;
+	max-height: 400px;
 }
 
 #title{
@@ -167,7 +155,6 @@ blockquote:after {
 }
 
 #social i{
-	padding-left: 20px;
 	padding-right: 5px;
 }
 
