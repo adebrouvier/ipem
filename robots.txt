@@ -1,0 +1,5 @@
+# robots.txt
+User-agent: *
+Disallow: 
+Disallow: /footer.html
+Sitemap: http://www.ipemcomodoro.com.ar/sitemap.xml
