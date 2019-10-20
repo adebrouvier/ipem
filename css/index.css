@@ -164,11 +164,9 @@ blockquote:after {
 	transition: 0.2s;
 }
 
-#footer {	
-	height: 120px;
+footer {
 	background-color: #2A2A2A;
 	color: white;
-	padding: 36px 0 0;
 }
 
 #footer p{
